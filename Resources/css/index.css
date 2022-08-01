@@ -1,0 +1,304 @@
+@font-face {
+  font-family: 'Calistoga';
+  src: url('../fonts/Calistoga-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Merriweather';
+  src: url('../fonts/Merriweather-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Shrikhand';
+  src: url('../fonts/Shrikhand-Regular.ttf') format('truetype');
+}
+
+/* General */
+
+body {
+  background-color: #342C2C;
+}
+
+h2, h3 {
+  color: #EDEDED;
+}
+
+p {
+  color: #EDEDED;
+  font-size: 15px;
+  font-family: Merriweather, Georgia, 'Times New Roman';
+  line-height: 25px;
+}
+
+a {
+  color: #342C2C;
+  font-family: Calistoga, Georgia, 'Times New Roman';
+  text-decoration: none;
+}
+
+a:hover {
+  color: #596987;
+}
+
+.date {
+  color: #918D8D;
+  font-weight: bold;
+  display: block;
+  width: 150px;
+}
+
+/* Title */
+h1 {
+  font-size: 60px;
+  text-align: center;
+  font-family: Shrikhand, 'Courier New', 'Times New Roman';
+}
+
+h1 a {
+  color: #EDEDED;
+  font-family: Shrikhand;
+}
+
+/* Navigation Bar */
+nav {
+  position: sticky;
+  top: 1px;
+  background-color: #EDEDED;
+  width: 100%;
+  overflow: visible;
+  z-index: 2;
+}
+
+nav ul {
+  list-style: none;
+  padding: 10px;
+}
+
+nav ul li {
+  display: inline-block;
+  text-align: center;
+  width: 24%;
+}
+
+nav ul li a {
+  font-size: 25px;
+}
+
+.drpdwn-content {
+  display: none;
+  position: absolute;
+  left: 55%;
+  background-color: #EDEDED;
+  box-shadow: 0px 1px 15px 1px #918D8D;
+  z-index: 1;
+}
+
+.drpdwn-content a {
+  float: left;
+  font-size: 15px;
+  padding: 12px 16px;
+  text-align: left;
+}
+
+.drpdwn:hover .drpdwn-content {
+  display: block;
+}
+
+/* index.html */
+
+/* Main */
+h2 {
+  font-size: 30px;
+  font-family: Calistoga, Georgia, 'Times New Roman';
+  text-decoration: underline;
+}
+
+.iframe-container {
+  position: relative;
+  padding-top: 56.25%;
+  overflow: hidden;
+}
+
+.iframe-container .featured-vid {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+/* about.html */
+
+/* Main */
+figcaption {
+  color: #342C2C;
+  background-color: #EDEDED;
+  position: relative;
+  bottom: 25px;
+  text-align: center;
+}
+
+.images figure {
+  display: inline-block;
+}
+
+
+
+.about a {
+  color: #EDEDED;
+  font-family: Merriweather, Georgia, 'Times New Roman';
+}
+
+.about a:hover {
+  color: #596987;
+}
+
+#portrait {
+  padding-right: 12.5%;
+}
+
+#logo {
+  float: right;
+}
+
+.socialLinks {
+  display: block;
+  position: relative;
+  left: 25%;
+}
+
+.socialLinks a {
+  color: #EDEDED;
+  text-decoration: none;
+}
+
+.socialLinks a img{
+  position: relative;
+  width: 20px;
+}
+
+#yt {
+  padding-right: 5%;
+}
+
+#yt img {
+  position: relative;
+  top: 1px;
+}
+
+#insta img {
+  position: relative;
+  top: 4px;
+}
+
+/* content.html */
+
+/* Main */ 
+.tblCont {
+  display: inline-block;
+  position: relative;
+  left: 5%;
+  background-color: #EDEDED;
+  width: 150px;
+  padding: 5px 5px;
+  border-style: solid;
+  border-color: #342C2C;
+  box-shadow: 0px 0px 3px 1px #EDEDED;
+  z-index: 1;
+}
+
+.tblCont h3 {
+  color: #342C2C;
+  font-family: Merriweather, Georgia, 'Times New Roman';
+  text-align: center;
+  text-decoration: underline;
+}
+
+.tblCont ol {
+  font-weight: bold;
+  list-style: lower-roman;
+}
+
+.tblCont ol li{
+  line-height: 25px;
+}
+
+.tblCont ol li a {
+  font-size: 15px;
+  font-family: Merriweather, Georgia, 'Times New Roman'
+}
+
+.decor {
+  display: inline-block;
+  position: absolute;
+  right: 1px;
+  width: 350px;
+}
+
+.cont-box {
+  border-color: #EDEDED;
+  border-style: solid;
+  border-left: 0px;
+  border-right: 0px;
+}
+
+.cont-box .desc {
+  float: left;
+  width: 50%;
+  height: 150px;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+.cont-box .desc a {
+  font-family: Merriweather, Georgia, 'Times New Roman';
+  color: #596987;
+}
+
+.cont-box .desc a:hover {
+  color: #918D8D;
+}
+
+.cont-box .vid-box {
+  display: inline-block;
+  position: relative;
+  padding-left: 7%;
+  bottom: 20px;
+  height: 56.25%;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.cont-box .vid-box .cont-vid {
+  width: 100%;
+  height: 100%;
+}
+
+/* updates.html */
+
+/* Main */
+#blog div {
+  border-color: #EDEDED;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+}
+
+
+/* Footer */
+footer {
+  position: static;
+  background-color: #EDEDED;
+  width: 100%;
+  padding: .5% 0%;
+}
+
+footer h3 {
+  color: #342C2C;
+  font-size: 15px;
+  font-family: Calistoga;
+  text-align: center;
+}
